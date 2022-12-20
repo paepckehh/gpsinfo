@@ -10,11 +10,11 @@ import (
 
 	"paepcke.de/airloctag"
 	"paepcke.de/daylight/sun"
-	"paepcke.de/gpstime/gpsfeed"
 	"paepcke.de/gpsinfo/geohash"
 	"paepcke.de/gpsinfo/nmeanano"
 	"paepcke.de/gpsinfo/pluscode"
 	"paepcke.de/gpsinfo/zlatlong"
+	"paepcke.de/gpstime/gpsfeed"
 )
 
 const _TS = "15:04:05" // time stamp layout [time.Parse]

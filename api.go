@@ -5,8 +5,8 @@ package gpsinfo
 import (
 	"time"
 
-	"paepcke.de/gpstime/gpsfeed"
 	"paepcke.de/gpstime"
+	"paepcke.de/gpstime/gpsfeed"
 )
 
 //
