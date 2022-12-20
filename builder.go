@@ -13,7 +13,7 @@ import (
 	"paepcke.de/gpsinfo/geohash"
 	"paepcke.de/gpsinfo/nmeanano"
 	"paepcke.de/gpsinfo/zlatlong"
-	"paepcke.de/gpstime/gpsfeed"
+	"paepcke.de/gpsinfo/gpsfeed"
 )
 
 const _TS = "15:04:05" // time stamp layout [time.Parse]
