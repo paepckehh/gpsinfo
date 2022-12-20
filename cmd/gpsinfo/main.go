@@ -5,7 +5,7 @@ package main
 import (
 	"os"
 
-	"paepcke.de/gpsfeed"
+	"paepcke.de/gpsinfo/gpsfeed"
 	"paepcke.de/gpsinfo"
 )
 
