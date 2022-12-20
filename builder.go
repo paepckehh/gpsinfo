@@ -10,7 +10,7 @@ import (
 
 	"paepcke.de/airloctag"
 	"paepcke.de/daylight/sun"
-	"paepcke.de/gpsfeed"
+	"paepcke.de/gpstime/gpsfeed"
 	"paepcke.de/gpsinfo/geohash"
 	"paepcke.de/gpsinfo/nmeanano"
 	"paepcke.de/gpsinfo/pluscode"
