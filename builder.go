@@ -12,7 +12,6 @@ import (
 	"paepcke.de/daylight/sun"
 	"paepcke.de/gpsinfo/geohash"
 	"paepcke.de/gpsinfo/nmeanano"
-	"paepcke.de/gpsinfo/pluscode"
 	"paepcke.de/gpsinfo/zlatlong"
 	"paepcke.de/gpstime/gpsfeed"
 )
@@ -103,7 +102,6 @@ func build(dev *gpsfeed.GpsDevice, channelGpsFrames, channelOut chan string, dis
 			hash, _, _ = airloctag.Encode(m.Latitude, m.Longitude, x.Altitude, "", 0)
 			at = fmt.Sprintf("AirLocTag            : %s%v%s\n", _BLUE, hash, _OFF)
 			gh = fmt.Sprintf("GeoHash              : %s%v%s\n", _BLUE, geohash.Encode2D(m.Latitude, m.Longitude), _OFF)
-			pl = fmt.Sprintf("Pluscode [googlemap] : %s%v%s\n", _BLUE, pluscode.Encode2D(m.Latitude, m.Longitude), _OFF)
 			zl = fmt.Sprintf("zLatLong [bingmap]   : %s%v%s\n", _BLUE, zlatlong.Encode2D(m.Latitude, m.Longitude), _OFF)
 			td = fmt.Sprintf("Today [UTC]          : Sunrise %s%v%s      Sunset %s%v%s      Noon %s%v%s      Daylight %s%v%s\n", _CYAN, sunrise.Format(_TS), _OFF, _CYAN, sunset.Format(_TS), _OFF, _CYAN, noon.Format(_TS), _OFF, _CYAN, daylight, _OFF)
 		}
@@ -131,7 +129,6 @@ func build(dev *gpsfeed.GpsDevice, channelGpsFrames, channelOut chan string, dis
 		if m.Latitude != 0 && m.Longitude != 0 {
 			fmt.Fprintf(&b, gh)
 			fmt.Fprintf(&b, zl)
-			fmt.Fprintf(&b, pl)
 			fmt.Fprintf(&b, at)
 			fmt.Fprintf(&b, _sectionLine)
 			fmt.Fprintf(&b, airp)
