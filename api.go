@@ -21,4 +21,3 @@ func Debug(device string) { debug(&gpsfeed.GpsDevice{FileIO: device}) }
 
 // DebugD ...
 func DebugD(dev *gpsfeed.GpsDevice) { debug(dev) }
-

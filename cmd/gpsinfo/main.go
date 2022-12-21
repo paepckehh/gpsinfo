@@ -5,8 +5,8 @@ package main
 import (
 	"os"
 
-	"paepcke.de/gpsinfo/gpsfeed"
 	"paepcke.de/gpsinfo"
+	"paepcke.de/gpsinfo/gpsfeed"
 )
 
 // const defaults
