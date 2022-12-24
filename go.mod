@@ -3,9 +3,9 @@ module paepcke.de/gpsinfo
 go 1.20
 
 require (
-	paepcke.de/airloctag v0.0.0-20221224052703-7ba600707f3b
-	paepcke.de/daylight v0.0.0-20221222155138-d56bce63248a
-	paepcke.de/gpstime v0.0.0-20221222070909-26b7abc6534c
+	paepcke.de/airloctag v0.0.0-20221224074114-eae59ccd20d5
+	paepcke.de/daylight v0.0.0-20221224081057-eaeb8539ae39
+	paepcke.de/gpstime v0.0.0-20221224074449-d7680e5c52ec
 )
 
 require (
