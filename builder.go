@@ -28,7 +28,7 @@ func build(dev *gpsfeed.GpsDevice, channelGpsFrames, channelOut chan string, dis
 		NumberSVsInView       string
 		indicator             string
 		hash, airp, dist      string
-		zl, pl, td, gh, at    string
+		zl,td, gh, at         string
 		oldLat, oldLong       float64
 		t, daylight, dtime    time.Duration
 		sunrise, sunset, noon time.Time

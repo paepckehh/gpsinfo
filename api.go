@@ -1,12 +1,7 @@
-// package gpsinfo ...
+// package gpsinfo decodes gps nmea frames from your gpsdongle (debug/ingo)
 package gpsinfo
 
-// import
-import (
-	"time"
-
-	"paepcke.de/gpsinfo/gpsfeed"
-)
+import "paepcke.de/gpsinfo/gpsfeed"
 
 //
 // SIMPLE API
