@@ -2,6 +2,7 @@
 
 [paepche.de/gpsinfo](https://paepcke.de/gpsinfo)
 
+- needs go1.20rc (sorry!)
 - Show and decode nmea frames from an (usb) gps dongle.
 - Focus on small embedded systems (debugging) on restricted resources.
 - Focus on power saving parser (NO CLEAN idomatic go code for hot loop, no clean full state maschine, quick hack)
