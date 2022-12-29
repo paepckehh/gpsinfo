@@ -4,8 +4,8 @@ go 1.20
 
 require (
 	paepcke.de/airloctag v0.1.0
-	paepcke.de/daylight v0.1.0
-	paepcke.de/gpstime v0.1.0
+	paepcke.de/daylight v0.1.1
+	paepcke.de/gpstime v0.1.2
 )
 
 require (
