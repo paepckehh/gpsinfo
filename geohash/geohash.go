@@ -96,14 +96,14 @@ func encRange(x, r float64) uint32                       { return uint32((x + r)
 func decRange(x uint32, r float64) float64               { return 2*r*float64(x)/math.Exp2(32) - r }
 func encInt(lat, long float64) uint64                    { return interleave(encRange(lat, 90), encRange(long, 180)) }
 func interleave(x, y uint32) uint64                      { return spread(x) | (spread(y) << 1) }
-func deinterleave(x uint64) (a,b uint32)                 { return squash(x), squash(x >> 1) }
+func deinterleave(x uint64) (a, b uint32)                { return squash(x), squash(x >> 1) }
 func maxDecimalPower(r float64) float64                  { return math.Pow10(int(math.Floor(math.Log10(r)))) }
 func encodeIntWithP(lat, long float64, bits uint) uint64 { return encInt(lat, long) >> (64 - bits) }
-func errorWithP(bits uint) (a,b float64) {
+func errorWithP(bits uint) (a, b float64) {
 	return math.Ldexp(180.0, -(int(bits) / 2)), math.Ldexp(360.0, -(int(bits) - int(bits)/2))
 }
 
-func (b box) round() (aa,bb float64) {
+func (b box) round() (aa, bb float64) {
 	x, y := maxDecimalPower(b.maxLat-b.minLat), maxDecimalPower(b.maxLong-b.minLong)
 	return math.Ceil(b.minLat/x) * x, math.Ceil(b.minLong/y) * y
 }
