@@ -65,7 +65,7 @@ func Decode2D(h string) (lat, long float64) {
 }
 
 // Decode3D ...
-func Decode3D(h string) (lat, long, h float64) {
+func Decode3D(h string) (lat, long, hh float64) {
 	s := strings.Split(h, "@")
 	if len(s) != 2 {
 		panic("unable to continue, invalid 3D gehash code [" + h + "]")
@@ -103,7 +103,7 @@ func errorWithP(bits uint) (a,b float64) {
 	return math.Ldexp(180.0, -(int(bits) / 2)), math.Ldexp(360.0, -(int(bits) - int(bits)/2))
 }
 
-func (b box) round() (a,b float64) {
+func (b box) round() (aa,bb float64) {
 	x, y := maxDecimalPower(b.maxLat-b.minLat), maxDecimalPower(b.maxLong-b.minLong)
 	return math.Ceil(b.minLat/x) * x, math.Ceil(b.minLong/y) * y
 }

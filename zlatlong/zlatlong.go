@@ -64,7 +64,7 @@ func Encode(a, o float64) string {
 func Decode2D(in string) (lat, long float64) { return Decode(in) }
 
 // Decode3D ...
-func Decode3D(h string) (lat, long, h float64) {
+func Decode3D(h string) (lat, long, hh float64) {
 	s := strings.Split(h, "@")
 	if len(s) != 2 {
 		panic("unable to continue, invalid 3D gehash code [" + h + "]")
