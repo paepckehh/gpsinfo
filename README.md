@@ -13,7 +13,7 @@
 go install paepcke.de/gpsinfo/cmd/gpsinfo@latest
 ```
 
-# DOWNLOAD (prebuild)
+### DOWNLOAD (prebuild)
 
 [github.com/paepckehh/gpsinfo/releases](https://github.com/paepckehh/gpsinfo/releases)
 
