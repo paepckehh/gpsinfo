@@ -55,17 +55,17 @@ func Encode3D(a, o, l float64) string {
 //
 
 // Decode ...
-func Decode(h string) (float64, float64) {
+func Decode(h string) (lat, long float64) {
 	return boundingBoxIntWithP(b32enc.dec(h), uint(5*len(h))).round()
 }
 
 // Decode2D ...
-func Decode2D(h string) (float64, float64) {
+func Decode2D(h string) (lat, long float64) {
 	return boundingBoxIntWithP(b32enc.dec(h), uint(5*len(h))).round()
 }
 
 // Decode3D ...
-func Decode3D(h string) (float64, float64, float64) {
+func Decode3D(h string) (lat, long, h float64) {
 	s := strings.Split(h, "@")
 	if len(s) != 2 {
 		panic("unable to continue, invalid 3D gehash code [" + h + "]")
@@ -96,14 +96,14 @@ func encRange(x, r float64) uint32                       { return uint32((x + r)
 func decRange(x uint32, r float64) float64               { return 2*r*float64(x)/math.Exp2(32) - r }
 func encInt(lat, long float64) uint64                    { return interleave(encRange(lat, 90), encRange(long, 180)) }
 func interleave(x, y uint32) uint64                      { return spread(x) | (spread(y) << 1) }
-func deinterleave(x uint64) (uint32, uint32)             { return squash(x), squash(x >> 1) }
+func deinterleave(x uint64) (a,b uint32)                 { return squash(x), squash(x >> 1) }
 func maxDecimalPower(r float64) float64                  { return math.Pow10(int(math.Floor(math.Log10(r)))) }
 func encodeIntWithP(lat, long float64, bits uint) uint64 { return encInt(lat, long) >> (64 - bits) }
-func errorWithP(bits uint) (float64, float64) {
+func errorWithP(bits uint) (a,b float64) {
 	return math.Ldexp(180.0, -(int(bits) / 2)), math.Ldexp(360.0, -(int(bits) - int(bits)/2))
 }
 
-func (b box) round() (float64, float64) {
+func (b box) round() (a,b float64) {
 	x, y := maxDecimalPower(b.maxLat-b.minLat), maxDecimalPower(b.maxLong-b.minLong)
 	return math.Ceil(b.minLat/x) * x, math.Ceil(b.minLong/y) * y
 }

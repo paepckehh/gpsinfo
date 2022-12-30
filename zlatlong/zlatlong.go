@@ -34,12 +34,15 @@ import (
 // EXTERNAL INTERFACES
 //
 
+// Encode2D ...
 func Encode2D(a, o float64) string { return Encode(a, o) }
 
+// Encode3D ...
 func Encode3D(a, o, l float64) string {
 	return Encode(a, o) + "@" + strconv.FormatFloat(l, 'f', -1, 64)
 }
 
+// Encode ...
 func Encode(a, o float64) string {
 	var result []byte
 	dy, dx := round(a*100000), round(o*100000)
@@ -57,9 +60,11 @@ func Encode(a, o float64) string {
 	return string(result)
 }
 
-func Decode2D(in string) (float64, float64) { return Decode(in) }
+// Decode2D ...
+func Decode2D(in string) (lat, long float64) { return Decode(in) }
 
-func Decode3D(h string) (float64, float64, float64) {
+// Decode3D ...
+func Decode3D(h string) (lat, long, h float64) {
 	s := strings.Split(h, "@")
 	if len(s) != 2 {
 		panic("unable to continue, invalid 3D gehash code [" + h + "]")
@@ -72,7 +77,8 @@ func Decode3D(h string) (float64, float64, float64) {
 	return a, o, l
 }
 
-func Decode(in string) (float64, float64) {
+// Decode ...
+func Decode(in string) (lat, long float64) {
 	value := []byte(in)
 	l := len(value)
 	index, max, n, k := 0, int64(4294967296), int64(0), uint(0)

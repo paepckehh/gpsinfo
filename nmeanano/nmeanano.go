@@ -56,13 +56,21 @@ func GetTimeStamp(x RMC) time.Time {
 //
 
 const (
+	// TypeGGA ...
 	TypeGGA = "GGA"
+	// Invalid ...
 	Invalid = "0"
+	// GPS ...
 	GPS     = "1"
+	// DGPS ...
 	DGPS    = "2"
+	// PPS ...
 	PPS     = "3"
+	// RTK ...
 	RTK     = "4"
+	// FRTK ...
 	FRTK    = "5"
+	// EST ...
 	EST     = "6"
 )
 
@@ -100,6 +108,7 @@ func newGGA(s BaseSentence) (GGA, error) {
 }
 
 const (
+	// TypeGNS ...
 	TypeGNS              = "GNS"
 	NoFixGNS             = "N"
 	AutonomousGNS        = "A"
@@ -147,7 +156,9 @@ func newGNS(s BaseSentence) (GNS, error) {
 }
 
 const (
+	// TypeGSA
 	TypeGSA = "GSA"
+	TypeGSV = "GSV"
 	Auto    = "A"
 	Manual  = "M"
 	FixNone = "1"
@@ -184,10 +195,6 @@ func newGSA(s BaseSentence) (GSA, error) {
 	m.VDOP = p.Float64(16, "vdop")
 	return m, p.Err()
 }
-
-const (
-	TypeGSV = "GSV"
-)
 
 // GSV ...
 type GSV struct {
