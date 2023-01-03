@@ -142,7 +142,7 @@ func build(dev *gpsfeed.GpsDevice, channelGpsFrames, channelOut chan string, dis
 		for i := range g.Info {
 			fmt.Fprintf(&b, " + SV-PRN %s%2d%s SNR %s%2d%s Elevation %s%2d%s Azimuth %s%3d%s \n", _BLUE, g.Info[i].SVPRNNumber, _OFF, _BLUE, g.Info[i].SNR, _OFF, _BLUE, g.Info[i].Elevation, _OFF, _BLUE, g.Info[i].Azimuth, _OFF)
 		}
-		fmt.Fprintf(&b, _sectionLine)
+		fmt.Fprint(&b, _sectionLine)
 		fmt.Fprintf(&b, "Fix Dilution         : Type %s%v%s Mode %s%v%s Precision Dilution %s%v%s ( Horizontal %s%v%s Vertical %s%v%s )\n", _BLUE, a.Mode, _OFF, _BLUE, a.Type, _OFF, _BLUE, a.PDOP, _OFF, _BLUE, a.HDOP, _OFF, _BLUE, a.VDOP, _OFF)
 		fmt.Fprintf(&b, "Fix Quality          : %s[%s]%s\n", _ALERT_G, fixQuality, _OFF)
 		fmt.Fprintf(&b, "Fix used Sat's       : %s%v%s\n", _BLUE, x.NumSatellites, _OFF)
@@ -161,7 +161,7 @@ func build(dev *gpsfeed.GpsDevice, channelGpsFrames, channelOut chan string, dis
 		fmt.Fprintf(&b, "Time Difference      : %s%s%s\n", cDIFF, t, _OFF)
 		fmt.Fprintf(&b, "GPS Time             : %s%s%s\n", _BLUE, tsGps, _OFF)
 		fmt.Fprintf(&b, "Local System Time    : %s%s%s\n", _BLUE, tsSys, _OFF)
-		fmt.Fprintf(&b, _sectionLine)
+		fmt.Fprint(&b, _sectionLine)
 		counter++
 		dtime = (time.Since(tsSys))
 		fmt.Fprintf(&b, "%s###  Time needed to decode Frame: %v  ###  Total Frames: %v%s\n", _GREY, dtime, counter, _OFF)
