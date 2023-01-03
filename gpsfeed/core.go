@@ -123,10 +123,7 @@ func checkSumTag(sentence string) string {
 func checkSumValid(sentence string) bool {
 	t := strings.Split(sentence, _checksep)
 	r := t[0][1:]
-	if checkSum(r) == t[1] {
-		return true
-	}
-	return false
+	return checkSum(r) == t[1]
 }
 
 // checkSum ...

@@ -77,8 +77,5 @@ func getErr(dev *GpsDevice) string {
 func checkErrCount(dev *GpsDevice) bool {
 	dev.ErrCount.Add(1)
 	e := dev.ErrCount.Load()
-	if e < _errMax {
-		return true
-	}
-	return false
+	return e < _errMax
 }
