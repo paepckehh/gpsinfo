@@ -1,6 +1,6 @@
 # OVERVIEW
 
-[paepche.de/gpsinfo](https://paepcke.de/gpsinfo)
+[paepche.de/gpsinfo](https://paepcke.de/gpsinfo/)
 
 - needs go1.20rc (sorry!)
 - Show and decode nmea frames from an (usb) gps dongle.
