@@ -1,7 +1,5 @@
-// package gpsinfo ...
 package gpsinfo
 
-// const
 const (
 	// ansi terminal color definitions
 	_OFF     = "\033[0m"

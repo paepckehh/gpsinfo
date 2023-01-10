@@ -1,7 +1,5 @@
-// gpsinfo
 package gpsinfo
 
-// import
 import (
 	"fmt"
 	"math"

@@ -1,7 +1,5 @@
-// package gpsinfo ...
 package gpsinfo
 
-// import
 import (
 	"time"
 
