@@ -23,6 +23,9 @@ go install paepcke.de/gpsinfo/cmd/gpsinfo@latest
 gpsinfo /dev/gps0
 [...]
 ```
+# DOCS
+
+[pkg.go.dev/paepcke.de/gpsinfo](https://pkg.go.dev/paepcke.de/gpsinfo)
 
 # CONTRIBUTION
 
