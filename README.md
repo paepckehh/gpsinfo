@@ -1,5 +1,5 @@
 # OVERVIEW
-[![Go Report Card](https://goreportcard.com/badge/paepcke.de/gpsinfo)](https://goreportcard.com/report/paepcke.de/gpsinfo)
+[![Go Reference](https://pkg.go.dev/badge/paepcke.de/gpsinfo.svg)](https://pkg.go.dev/paepcke.de/gpsinfo)  [![Go Report Card](https://goreportcard.com/badge/paepcke.de/gpsinfo)](https://goreportcard.com/report/paepcke.de/gpsinfo)
 
 [paepche.de/gpsinfo](https://paepcke.de/gpsinfo/)
 
