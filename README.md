@@ -1,5 +1,5 @@
 # OVERVIEW
-[![Go Reference](https://pkg.go.dev/badge/paepcke.de/gpsinfo.svg)](https://pkg.go.dev/paepcke.de/gpsinfo)  [![Go Report Card](https://goreportcard.com/badge/paepcke.de/gpsinfo)](https://goreportcard.com/report/paepcke.de/gpsinfo)
+[![Go Reference](https://pkg.go.dev/badge/paepcke.de/gpsinfo.svg)](https://pkg.go.dev/paepcke.de/gpsinfo) [![Go Report Card](https://goreportcard.com/badge/paepcke.de/gpsinfo)](https://goreportcard.com/report/paepcke.de/gpsinfo) [![Go Build](https://github.com/paepckehh/gpsinfo/actions/workflows/golang.yml/badge.svg)](https://github.com/paepckehh/gpsinfo/actions/workflows/golang.yml)
 
 [paepche.de/gpsinfo](https://paepcke.de/gpsinfo/)
 
