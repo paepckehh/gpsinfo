@@ -1,7 +1,7 @@
 # OVERVIEW
 [![Go Reference](https://pkg.go.dev/badge/paepcke.de/gpsinfo.svg)](https://pkg.go.dev/paepcke.de/gpsinfo) [![Go Report Card](https://goreportcard.com/badge/paepcke.de/gpsinfo)](https://goreportcard.com/report/paepcke.de/gpsinfo) [![Go Build](https://github.com/paepckehh/gpsinfo/actions/workflows/golang.yml/badge.svg)](https://github.com/paepckehh/gpsinfo/actions/workflows/golang.yml)
 
-[paepche.de/gpsinfo](https://paepcke.de/gpsinfo/)
+[paepcke.de/gpsinfo](https://paepcke.de/gpsinfo/)
 
 - needs go1.20rc (sorry!)
 - Show and decode nmea frames from an (usb) gps dongle.
