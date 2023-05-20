@@ -3,7 +3,7 @@ module paepcke.de/gpsinfo
 go 1.20
 
 require (
-	paepcke.de/airloctag v0.1.16
+	paepcke.de/airloctag v0.1.19
 	paepcke.de/daylight v0.1.17
 	paepcke.de/gpstime v0.1.17
 )
