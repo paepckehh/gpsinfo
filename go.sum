@@ -1,9 +1,9 @@
-golang.org/x/crypto v0.10.0 h1:LKqV2xt9+kDzSTfOhx4FrkEBcMrAgHSYgzywV9zcGmM=
-golang.org/x/crypto v0.10.0/go.mod h1:o4eNf7Ede1fv+hwOwZsTHl9EsPFO6q6ZvYR8vYfY45I=
-golang.org/x/sys v0.9.0 h1:KS/R3tvhPqvJvwcKfnBHJwwthS11LRhmM5D59eEXa0s=
-golang.org/x/sys v0.9.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
-paepcke.de/airloctag v0.1.21 h1:Oc2IE/MCJq9nGlm2aJZXw4CIJBU7AGslseD0OLNKtqA=
-paepcke.de/airloctag v0.1.21/go.mod h1:fDUCf1SuPursbhR0Ai+hvPkpk4QNTpYMMvOrc3VgoPo=
+golang.org/x/crypto v0.11.0 h1:6Ewdq3tDic1mg5xRO4milcWCfMVQhI4NkqWWvqejpuA=
+golang.org/x/crypto v0.11.0/go.mod h1:xgJhtzW8F9jGdVFWZESrid1U1bjeNy4zgy5cRr/CIio=
+golang.org/x/sys v0.10.0 h1:SqMFp9UcQJZa+pmYuAKjd9xq1f0j5rLcDIk0mj4qAsA=
+golang.org/x/sys v0.10.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+paepcke.de/airloctag v0.1.22 h1:0RN35ujoG0+RyUrdmn7c4DCKEc6yz+gCMY4URIfZb8I=
+paepcke.de/airloctag v0.1.22/go.mod h1:m/yf9n0tF4oJ2dST74PIrOx+bY9Fmlq5s+ChB64CPrk=
 paepcke.de/daylight v0.1.23 h1:MBJJEigePZCP8JLYVLipVmbAkncwmk2uCHJoKn3bRcA=
 paepcke.de/daylight v0.1.23/go.mod h1:QaOOecAt95lswqM5gHs3DfD6juj61tVu4FBUrHtfTNo=
 paepcke.de/gpstime v0.1.22 h1:rD/aGwL3Xqxpr0PFJQagvaouma7KaB73Po/9XBhrqC0=
