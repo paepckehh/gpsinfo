@@ -1,6 +1,6 @@
 module paepcke.de/gpsinfo
 
-go 1.22.3
+go 1.21
 
 require (
 	paepcke.de/airloctag v0.1.22
