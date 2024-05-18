@@ -5,7 +5,7 @@ go 1.21
 require (
 	paepcke.de/airloctag v0.1.24
 	paepcke.de/daylight v0.1.25
-	paepcke.de/gpstime v0.1.23
+	paepcke.de/gpstime v0.1.25
 )
 
 require (
