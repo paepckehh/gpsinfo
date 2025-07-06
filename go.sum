@@ -6,5 +6,5 @@ paepcke.de/airloctag v0.2.2 h1:FXW43cpmQsXaOdwERourgAfAOaXrMXwz9TasGJy4U5A=
 paepcke.de/airloctag v0.2.2/go.mod h1:19hosKC4oFB+EdLyBbwgAXP/vNYdlQ8DWs4k2cdiegc=
 paepcke.de/daylight v0.1.27 h1:Nf43Z2heqzyLZtgUGsVve25kFTR9awBMWcmfKJ1Xpp4=
 paepcke.de/daylight v0.1.27/go.mod h1:ZiKN8z1oRh3MIotPZlKbST5OX0tKHpPlzsxlntggmlg=
-paepcke.de/gpstime v0.1.25 h1:G2j6S5CYfShzqfss6Fl40OzdGsBthAD0B3rQWCj5jBM=
-paepcke.de/gpstime v0.1.25/go.mod h1:dYgplB75589wiGM8vxYuj9frHUTOoVMOgC4g53aUY5w=
+paepcke.de/gpstime v0.1.26 h1:92bl6qGmJXUdIvZ+8rvGMyCquB7+0dEP0nTkpY9eLsw=
+paepcke.de/gpstime v0.1.26/go.mod h1:dlTBVN+iiS0ODCSs0EyQqZDQhY010HpeS+pWagajuSY=
